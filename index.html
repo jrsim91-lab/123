@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QMS Change Manager</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-mark">Q</div>
+        <div><strong>QMS Change</strong><small>MANAGEMENT SYSTEM</small></div>
+      </div>
+      <div class="nav-label">WORKSPACE</div>
+      <button class="nav-item active" data-view="dashboard">▦ <span>대시보드</span></button>
+      <button class="nav-item" data-view="register">＋ <span>변경 신청 등록</span></button>
+      <button class="nav-item" data-view="changes">☷ <span>변경관리 목록</span></button>
+      <div class="nav-label">QUALITY PROCESS</div>
+      <button class="nav-item" data-view="impact">◎ <span>영향평가 관리</span></button>
+      <button class="nav-item" data-view="execution">⇄ <span>실행 및 검증</span></button>
+      <button class="nav-item" data-view="closure">✓ <span>변경 종료 관리</span></button>
+      <div class="nav-label">REPORTS</div>
+      <button class="nav-item" data-view="reports">▤ <span>통계 및 보고서</span></button>
+      <div class="sidebar-bottom">
+        <div class="user-dot">Q</div>
+        <div><strong>QMS 담당자</strong><small>단일 사용자 시제품</small></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <div class="eyebrow">QUALITY MANAGEMENT / CHANGE CONTROL</div>
+          <h1 id="page-title">대시보드</h1>
+        </div>
+        <div class="top-actions">
+          <span class="prototype-pill">시제품 · 테스트 데이터</span>
+          <button class="primary-btn" id="quick-add">＋ 변경 등록</button>
+        </div>
+      </header>
+      <section id="view" class="content"></section>
+      <footer>QMS Change Manager <span>·</span> GitHub Pages Prototype <span>·</span> 운영 전 서버·DB·검증 구축 필요</footer>
+    </main>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="./app.js"></script>
+</body>
+</html>
